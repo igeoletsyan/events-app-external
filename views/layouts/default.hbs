@@ -9,18 +9,27 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-  <div>
+  <div class="container">
       <h1>Welcome to Team Cod's application</h1>
     {{{body}}}
 </div>
 <div>
   <h2>Add an event</h2>
     <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       location: <input name="location" type="text" /> <br />
+       <div class="mb-3">
+            <label class="form-label">title: </label>
+            <input class="form-control" name="title" type="text" />
+       </div>
+       <div class="mb-3">
+            <label class="form-label">description: </label>
+            <input class="form-control" name="description" type="text" />
+       </div>
+       <div class="mb-3">
+            <label class="form-label">location: </label>
+            <input class="form-control" name="location" type="text" />
+       </div>
        <br />
-        <input type="submit" name="submit" value="submit" />
+        <button class="btn btn-success" type="submit" name="submit">submit</button>
     </form>
   </div>
 </body>
